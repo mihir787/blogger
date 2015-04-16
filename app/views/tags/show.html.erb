@@ -5,3 +5,7 @@
     <li><%= link_to article.title, article_path(article) %></li>
   <% end %>
 </ul>
+
+<p>
+<%= link_to "delete", tag_path(@tag), method: :delete%>
+</p>

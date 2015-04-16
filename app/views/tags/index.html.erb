@@ -1,7 +1,7 @@
 <h1>All Tags</h1>
 
-<ul id="articles>"
+<ul id="tags>"
   <% @tags.each do |tag| %>
-    <li><%= link_to tag.title, tag_path(tag) %></li>
+    <li><%= link_to tag.name, tag_path(tag) %></li>
   <% end %>
 </ul>
